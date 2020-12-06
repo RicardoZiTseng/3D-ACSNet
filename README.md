@@ -68,7 +68,7 @@ python -m client.run ./settings/deploy.json
 ```
 
 ### Testing
-Once your training or model fusion process is over, you can configure your JSON file to segment subjects' brain images. An example of JSON file for the model prediction shown in [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/train.json).
+Once your training or model fusion process is over, you can configure your JSON file to segment subjects' brain images. An example of JSON file for the model prediction shown in [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_undeploy.json).
   - "task": This parameter need to set to `"predict"`, which means that we're going to make model prediction.
   - "gpu_id": The id of the GPU which you want to use. For example, you want to use the second gpu, you should write `"1"`.
   - "save_folder": The path to the folder of the saved segmentation results.
