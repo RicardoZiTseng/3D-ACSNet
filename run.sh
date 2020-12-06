@@ -1,4 +1,4 @@
-source activate your_env
+source activate your_environment
 
 python -m client.run ./settings/deploy.json
 
