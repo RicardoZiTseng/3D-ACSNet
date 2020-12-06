@@ -1,0 +1,26 @@
+{
+    "task": "predict",
+    "gpu_id": "0",
+    "save_folder": "./workdir/result/ensemble_8_9_10_step_8",
+    "data_path": "/your/path/to/iSeg-2019-Training",
+    "cube_size": 32,
+    "crop_size": 8,
+    "subjects": [8,9,10],
+    "predict_mode": "evaluation",
+    "model_files": [
+        "./weights/deploy/0_deploy.h5",
+        "./weights/deploy/1_deploy.h5",
+        "./weights/deploy/2_deploy.h5",
+        "./weights/deploy/3_deploy.h5",
+        "./weights/deploy/4_deploy.h5",
+        "./weights/deploy/5_deploy.h5",
+        "./weights/deploy/6_deploy.h5",
+        "./weights/deploy/7_deploy.h5",
+        "./weights/deploy/8_deploy.h5",
+        "./weights/deploy/9_deploy.h5",
+        "./weights/deploy/10_deploy.h5"
+    ],
+    "conv_size": 3,
+    "deploy": true,
+    "label_path": "/your/path/to/iSeg-2019-Training"
+}

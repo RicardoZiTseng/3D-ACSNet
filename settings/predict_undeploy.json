@@ -1,0 +1,15 @@
+{
+    "task": "predict",
+    "gpu_id": "0",
+    "save_folder": "./workdir/result/predict_undeploy",
+    "data_path": "/your/path/to/iSeg-2019-Trainingg",
+    "cube_size": 32,
+    "crop_size": 28,
+    "subjects": [8,9,10],
+    "predict_mode": "evaluation",
+    "model_files": [
+        "./weights/undeploy/0.h5"
+    ],
+    "deploy": false,
+    "label_path": "/your/path/to/iSeg-2019-Training"
+}

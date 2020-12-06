@@ -1,0 +1,17 @@
+{
+    "task": "deploy",
+    "ori_model": [
+        "./weights/undeploy/0.h5",
+        "./weights/undeploy/1.h5",
+        "./weights/undeploy/2.h5",
+        "./weights/undeploy/3.h5",
+        "./weights/undeploy/4.h5",
+        "./weights/undeploy/5.h5",
+        "./weights/undeploy/6.h5",
+        "./weights/undeploy/7.h5",
+        "./weights/undeploy/8.h5",
+        "./weights/undeploy/9.h5",
+        "./weights/undeploy/10.h5"
+    ],
+    "save_fold": "./weights/deploy"
+}
