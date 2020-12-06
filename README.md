@@ -96,7 +96,7 @@ Once your training or model fusion process is over, you can configure your JSON 
     - `"evaluation"`: If you have labels, you can set this option and evaluate the model's accuracy.
     - `"prediction"`: If you do not have labels, you need to set this.
   - "model_files": The list of model files to be loaded for model prediction.
-    - If there is only one model file's path in this parameter, the program will output one segmentation result predicted by this model file. See examples in [predict_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_deploy.json) or [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_undeploy.json)
+    - If there is only one model file's path in this parameter, the program will output one segmentation result predicted by this model file. See example in [predict_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_deploy.json) or [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_undeploy.json)
     - If there are multiple model files' pathes in this parameter, the program will adopt the majority voting strategy to combine these models' segmentation results. See example in [ensemble_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/ensemble_deploy.json) or [ensemble_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/ensemble_undeploy.json)
   - "deploy": If the model file to be loaded has fused parameters, you should set this parameter as `true`; otherwise, you need to set here as `false`.
   - "label_path": The path to the folder which contains the segmentation labels.
