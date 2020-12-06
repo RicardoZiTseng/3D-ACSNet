@@ -1,6 +1,6 @@
 # 3D Asymmetric Convolutional Segmentation Network (3D-ACSNet) for Brain MR Images of 6-month-old Infants
 
-This repository provides the experimental code for our paper "3D Asymmetric Convolutional Segmentation Network (3D-ACSNet) for Brain MR Images of 6-month-old Infants".
+This repository provides the competition code in [iSeg-2019](http://iseg2019.web.unc.edu/) for our paper "3D Asymmetric Convolutional Segmentation Network (3D-ACSNet) for Brain MR Images of 6-month-old Infants".
 
 Created by Zilong Zeng at Beijing Normal University.
 
