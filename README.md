@@ -34,7 +34,7 @@ The dataset used for model training and validation is from [iSeg-2019](http://is
 The process of **training**, **model fusion** and **testing** are all completed by configuring JSON files.
 
 ### Training
-An example of JSON file for the training process shown in [train.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/train.json).
+An example of JSON file for the training process shown in [train.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/train.json).
   - "task": This parameter need to set to `"train"`, which means that we're going to train the model.
   - "name": The name of this training process.
   - "gpu": For example, if you have 3 gpus, but you want to use the 1st and 3rd gpu, you should write here as `"0,2"`
@@ -57,7 +57,7 @@ python -m client.run ./settings/train.json
 
 ### Model Fusion
 
-Once your training process is over, you could configure your JSON file to fuse your model's parameters in **BN fusion** and **Branch Fusion** process. An example of JSON file for the model fusion process shown in [deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/deploy.json).
+Once your training process is over, you could configure your JSON file to fuse your model's parameters in **BN fusion** and **Branch Fusion** process. An example of JSON file for the model fusion process shown in [deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/deploy.json).
   - "task": This parameter need to set to `"deploy"`, which means that we're going to fuse the model's parameters.
   - "ori_model": List of pathes to model which has not fused parameters.
   - "save_fold": The path to folder where fused model will be stored.
@@ -68,7 +68,7 @@ python -m client.run ./settings/deploy.json
 ```
 
 ### Testing
-Once your training or model fusion process is over, you can configure your JSON file to segment subjects' brain images. An example of JSON file for the model prediction shown in [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/predict_undeploy.json).
+Once your training or model fusion process is over, you can configure your JSON file to segment subjects' brain images. An example of JSON file for the model prediction shown in [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/train.json).
   - "task": This parameter need to set to `"predict"`, which means that we're going to make model prediction.
   - "gpu_id": The id of the GPU which you want to use. For example, you want to use the second gpu, you should write `"1"`.
   - "save_folder": The path to the folder of the saved segmentation results.
@@ -96,8 +96,8 @@ Once your training or model fusion process is over, you can configure your JSON 
     - `"evaluation"`: If you have labels, you can set this option and evaluate the model's accuracy.
     - `"prediction"`: If you do not have labels, you need to set this.
   - "model_files": The list of model files to be loaded for model prediction.
-    - If there is only one model file's path in this parameter, the program will output one segmentation result predicted by this model file. See examples in [predict_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/predict_deploy.json) or [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/predict_undeploy.json)
-    - If there are multiple model files' pathes in this parameter, the program will adopt the majority voting strategy to combine these models' segmentation results. See example in [ensemble_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/ensemble_deploy.json) or [ensemble_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/settings/ensemble_undeploy.json)
+    - If there is only one model file's path in this parameter, the program will output one segmentation result predicted by this model file. See examples in [predict_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_deploy.json) or [predict_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/predict_undeploy.json)
+    - If there are multiple model files' pathes in this parameter, the program will adopt the majority voting strategy to combine these models' segmentation results. See example in [ensemble_deploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/ensemble_deploy.json) or [ensemble_undeploy.json](https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/settings/ensemble_undeploy.json)
   - "deploy": If the model file to be loaded has fused parameters, you should set this parameter as `true`; otherwise, you need to set here as `false`.
   - "label_path": The path to the folder which contains the segmentation labels.
 
