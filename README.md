@@ -2,9 +2,9 @@
 
 This repository provides the experimental code for our paper "3D Asymmetric Convolutional Segmentation Network (3D-ACSNet) for Brain MR Images of 6-month-old Infants".
 
-Created by Zilong Zeng at Beijing Normal University.
+Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact ricardo_zeng@mail.bnu.edu.cn or tengdazhao@bnu.edu.cn**
 
-![framework]("./images/framework.png")
+![framework]("/images/framework.png"):
 
 ## Contents
   - [Publication](#publication)
@@ -99,7 +99,7 @@ Once your training or model fusion process is over, you can configure your JSON 
   - "deploy": If the model file to be loaded has fused parameters, you should set this parameter as `true`; otherwise, you need to set here as `false`.
   - "label_path": The path to the folder which contains the segmentation labels.
 
-  We provide the pretrained models which are used for iSeg-2019 competition.
+  We provide the pretrained models which are used for ***the validation dataset in*** iSeg-2019 competition.
   - You can run command like this:
       ```
       python -m client.run ./settings/ensemble_deploy.json
