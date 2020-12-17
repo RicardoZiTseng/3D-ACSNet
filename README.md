@@ -4,7 +4,11 @@ This repository provides the experimental code for our paper "3D Asymmetric Conv
 
 Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact ricardo_zeng@mail.bnu.edu.cn or tengdazhao@bnu.edu.cn**
 
-![framework]("/images/framework.png"):
+<br>
+<!-- ![framework]("/images/framework.png"):
+ -->
+<img src="https://github.com/RicardoZiTseng/3D-ACSNet/blob/main/images/framework.png"/>
+<br>
 
 ## Contents
   - [Publication](#publication)
