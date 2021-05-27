@@ -1,27 +1,20 @@
-# 3D Asymmetric Convolutional Segmentation Network (3D-ACSNet) for Brain MR Images of 6-month-old Infants
-
-This repository provides the experimental code for our paper "3D Asymmetric Convolutional Segmentation Network (3D-ACSNet) for Brain MR Images of 6-month-old Infants".
+# 3D-ACSNet
 
 Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact ricardo_zeng@mail.bnu.edu.cn or tengdazhao@bnu.edu.cn**
 
 ## Contents
-  - [Publication](#publication)
   - [Requirements](#requirements)
   - [Dataset](#dataset)
   - [Runing the code](#runing-the-code)
-    - [Training](#training)
     - [Model Fusion](#model-fusion)
     - [Testing](#testing)
   - [Results](#results)
 
-## Publication
-If you find that this work is useful for your research, please consider citing our paper.
-
 ## Requirements
 - python>=3.5
-- tensorflow-gpu==1.14.0
-- Keras==2.2.5
-- nibabel>=2.4.1
+- tensorflow-gpu>=1.12.0
+- Keras
+- nibabel
 
 ## Dataset
 The dataset used for model training and validation is from [iSeg-2019](http://iseg2019.web.unc.edu/). The iSeg organizers provide 10 infant subjects with labels for model training and validation, and 13 infant subjects without labels for model testing. Each subject consists of T1 and T2 images for segmentation.
@@ -29,27 +22,6 @@ The dataset used for model training and validation is from [iSeg-2019](http://is
 ## Runing the code
 The process of **training**, **model fusion** and **testing** are all completed by configuring JSON files.
 
-### Training
-An example of JSON file for the training process shown in [train.json](/settings/train.json).
-  - "task": This parameter need to set to `"train"`, which means that we're going to train the model.
-  - "name": The name of this training process.
-  - "gpu": For example, if you have 3 gpus, but you want to use the 1st and 3rd gpu, you should write here as `"0,2"`
-  - "cube_size": The size of extracted cubes during training process.
-  - "save_period": Model save interval.
-  - "train_dir": The path to your training dataset.
-  - "train_ids": The ids of your training subjects.
-  - "batch_size": Batch size.
-  - "cycle": The training epochs in one cycle in the cosine annealing learning schedule.
-  - "lr_init": The maximum learning rate in each cycle.
-  - "lr_min": The minimum learning rate in each cycle.
-  - "epochs": The total training epochs.
-  - "train_nums_per_epoch": The total training cubes extracted in one epoch.
-  - "load_model_file": The path to pretrain model to be loaded. If not model file to be loade, you should set here as `null`.
-
-Once you have configured your JSON file for training, you need run this command like this:
-```
-python -m client.run ./settings/train.json
-```
 
 ### Model Fusion
 
