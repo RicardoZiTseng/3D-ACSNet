@@ -1,6 +1,6 @@
 # 3D-ACSNet
 
-Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact ricardo_zeng@mail.bnu.edu.cn or tengdazhao@bnu.edu.cn**
+Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact 1941651789@qq.com or tengdazhao@bnu.edu.cn**
 
 ## Contents
   - [Requirements](#requirements)
