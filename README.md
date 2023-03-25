@@ -1,6 +1,6 @@
 # 3D-ACSNet
 
-Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact 1941651789@qq.com or tengdazhao@bnu.edu.cn**
+Created by Zilong Zeng at Beijing Normal University. **For any questions, please contact zilongzeng@mail.bnu.edu.cn or tengdazhao@bnu.edu.cn**
 
 **Comparison of segmentation performance on the 13 validation infants of iSeg-2019 between the proposed method and the methods of the top 4 ranked teams.**
 - DICE    
